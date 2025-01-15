@@ -1,0 +1,435 @@
+/* Configuración universal */
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden; 
+    width: 100%; 
+}
+
+/* Asegura que las imágenes y videos no se desborden */
+img, video {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Configuración de fuentes de letra*/
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('../fonts/PF Regal/PFRegalDisplayPro-Regular.woff2') format('woff2'),
+         url('../fonts/PF Regal/PFRegalDisplayPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/Brandon/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'PF Regal Display Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.025);
+}
+
+/* Navbar Line Styles */
+.navbar-line {
+    width: 95%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 1px;
+    position: absolute;
+    top: 75px;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+
+/* Logo Styles */
+.logo-img {
+    width: 266;
+    height: 26;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'PF Regal Display Pro', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon-img {
+    width: 35px;
+    height: 20px;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    background: url('../img/Imagenes-LandingPage/banner.png') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+    background-position: 50% 20%;
+    padding-top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilo del contenedor del buscador */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    z-index: 11;
+}
+
+/* Estilo de la caja de texto */
+.search-container input[type="text"] {
+    font-family: 'Brandon Grotesque', sans-serif;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 30px 5px 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    width: 285px;
+    position: relative;
+}
+
+/* Estilo del placeholder */
+.search-container input[type="text"]::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* Estilo del botón de búsqueda */
+.search-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 3;
+    right: 10px;
+    padding: 5px;
+}
+
+/* Estilo del icono dentro del botón */
+.search-icon {
+    width: 20px;
+    height: 16px;
+}
+
+
+
+/* Subtitle Text Color */
+.section-subtitle {
+    padding-top: 40px; 
+    color: #DF991B;
+    font-size: 40px; 
+    margin: 0;
+    line-height: 0; 
+}
+
+/* Subtitle Text Color */
+.properties-for-sale-text {
+    padding-top: 40px; 
+    color:#000000;
+    font-size: 60px; 
+    margin: 0;
+    line-height: 2;
+}
+
+
+
+/* Subtitle Text Color */
+.section-luxury-properties {
+    padding-top: 40px; 
+    color: #DF991B;
+    font-size: 40px; 
+    margin: 0;
+    line-height: 0; 
+}
+
+/* Subtitle Text Color */
+.properties-developments {
+    padding-top: 40px; 
+    color:#000000;
+    font-size: 60px; 
+    margin: 0;
+    line-height: 1; 
+}
+
+
+/* Luxury Text Color */
+.luxury {
+    padding-top: 40px; 
+    color:#B4B7B7; 
+    font-size: 40px; 
+    margin-bottom: 0;
+    line-height: 0; 
+}
+
+/* Luxury Text Color */
+.hero-content-real-state {
+    color:#FFFFFF;
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.redes-sociales-img {
+    width: 19.55px;
+    height: 331.68px;
+    position: absolute;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.redes-sociales-img {
+    top: 200px;
+    left: 50px;
+}
+
+.small-arrow-right {
+    width: 30.5px;
+    height: 13.03px;
+    position: absolute;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.small-arrow-right {
+    top: 275px;
+    left: 125px;
+}
+
+/* Hero Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* Hero Content */
+.hero-content {
+    display: flex;
+    position: relative;
+    z-index: 15;
+    max-width: 1200px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    left: 100px;
+    flex-direction: column;
+    gap: 1;
+}
+
+
+/* Call to Action Button */
+.cta-button {
+    background: transparent;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center; 
+}
+
+
+.cta-button:hover {
+    background: #e6b800;
+}
+
+
+/* Contenedor principal de la sección */
+.featured-properties-container {
+    display: flex;
+    gap: 0px; /* Espacio entre los elementos hijos (imágenes y texto) */
+    align-items: flex-start; /* Alinea verticalmente los elementos al inicio */
+    padding: 0; /* Elimina cualquier espaciado interno innecesario */
+}
+
+.featured-properties-container {
+    display: flex;
+    gap: 0; /* Sin espacio extra */
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    max-width: 100%; /* Evita que se ajuste un ancho fijo innecesario */
+    box-sizing: border-box; /* Incluye padding y bordes en el cálculo del ancho */
+}
+.property-grid, .text-and-buttons {
+    width: auto; /* Quita cualquier ancho fijo */
+    max-width: 50%; /* Asegura que cada uno ocupe la mitad del espacio */
+    margin: 0; /* Elimina márgenes externos */
+    top: 400px;
+    padding-left: 20px;
+    
+}
+
+.text-and-buttons {
+    display: flex;
+    flex-direction: column; /* Texto y botones en columna */
+    padding-top: 500px; 
+    justify-content: space-around; /* Centra el contenido verticalmente */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    padding: 20px; /* Espaciado interno general */
+    height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+
+
+.property-item img {
+    width: auto; /* Ajusta automáticamente el tamaño en base a su contenido */
+    max-width: 100%; /* Asegura que no crezca más allá del contenedor */
+    height: auto; /* Mantén proporciones */
+}
+
+
+/* Título con fondo */
+.section-subtitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DF991B;
+}
+
+/* Texto principal */
+.properties-for-sale-text {
+    font-size: 60px;
+    font-weight: 600;
+    color: #000; /* Color negro */
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.gallery-nav {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.gallery-nav a {
+    background: transparent;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.gallery-nav a:hover {
+    background-color: #ddd;
+}
+
+
+
+
+/* Developments Properties Section */
+.developments {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* Property Grid Layout */
+.property-grid, .development-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px 0;
+}
+
+
+/* Property Item Styles */
+.property-item, .development-item {
+    background: #fff;
+    padding: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.5s ease;
+}
+
+.property-item img, .development-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect for Property Item */
+.property-item:hover, .development-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

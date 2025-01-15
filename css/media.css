@@ -1,0 +1,63 @@
+/* Mobile (max-width: 320px) */
+@media (max-width: 320px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Se asegura de que no exceda el ancho */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Reduce ligeramente el tamaño */
+        text-align: center; /* Centrado en móvil */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        text-align: center; /* Opcional: centrado */
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        text-align: center;
+    }
+
+    .property-grid, .development-grid {
+        grid-template-columns: 1fr; /* 1 columna en dispositivos pequeños */
+        gap: 15px; /* Espaciado entre elementos */
+    }
+
+    .property-item img, .development-item img {
+        object-fit: cover;
+        max-width: 100%; /* No exceden el contenedor */
+        height: auto; /* Mantiene proporciones */
+    }
+
+    /* Ajuste del footer */
+    .footer {
+        padding: 20px;
+        text-align: center; /* Centrado en pantallas pequeñas */
+    }
+
+    .footer-form {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%; /* Se adapta al contenedor */
+    }
+
+    .footer-top {
+        flex-direction: column; /* Apila el contenido */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        padding-top: 15px;
+    }
+}

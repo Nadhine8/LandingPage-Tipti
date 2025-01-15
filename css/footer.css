@@ -1,0 +1,162 @@
+/* Footer Styles */
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('../fonts/PF Regal/PFRegalDisplayPro-Regular.woff2') format('woff2'),
+         url('../fonts/PF Regal/PFRegalDisplayPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Contenedor general del footer */
+.footer {
+    font-family: PF Regal Display Pro, sans-serif;
+    color: #fff;
+    background: #000; /* Fondo negro del footer general */
+    position: relative;
+    padding-top: 100px; /* Espacio superior para la caja gris */
+}
+
+/* Caja superior (gris claro) */
+.footer-top {
+    background: #2D2D2D; /* Gris claro */
+    color: #fff;
+    padding: 40px 20px;
+    width: 80%; /* Más pequeña y centrada */
+    height: 55%;
+    margin: 0 auto;
+    position: absolute; /* Posición absoluta para superposición */
+    top: -60px; /* Sobresale de la caja negra */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 3px; /* Bordes redondeados */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    gap: 20px;   
+}
+
+/* Columna de texto en la caja gris */
+.footer-top .text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-top .text-column h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #DF991B; /* Amarillo */
+}
+
+.footer-top .text-column p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #fff; /* Blanco */
+}
+
+/* Buscador en la caja gris */
+.footer-top .search-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.footer-top label {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer-top input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+}
+
+.footer-top button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: transparent; /* Fondo transparente */
+    border: 1px solid #DF991B; /* Borde blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    color: #DF991B; /* Texto blanco */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-top button:hover {
+    background: #1b1509; /* Más oscuro al pasar el mouse */
+}
+
+/* Caja inferior (gris oscuro) */
+.footer-bottom {
+    background: #000;
+    color: #ccc;
+    padding: 40px 20px 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre columnas */
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ccc;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #DF991B;
+}
+
+.footer-column p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* Línea blanca */
+.footer-line {
+    width: 80%; /* Línea blanca centrada */
+    height: 1px;
+    background: #fff;
+    margin: 20px auto; /* Espaciado entre columnas y copyright */
+}
+
+/* Texto copyright */
+.footer-copyright {
+    font-size: 0.85rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 10px;
+}
